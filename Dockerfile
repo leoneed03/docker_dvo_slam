@@ -3,7 +3,7 @@ FROM paopaorobot/ros-vnc:fuerte
 MAINTAINER Chen Wang<mr_cwang@foxmail.com>
 
 RUN apt-get update \
-	&& apt-get install -y libsuitesparse-dev \
+	&& apt-get install -y libsuitesparse-dev time \
 	&& apt-get autoclean \
 	&& apt-get autoremove \
 	&& rm -rf /var/lib/apt/lists/*
