@@ -342,15 +342,15 @@ void BenchmarkNode::run() {
     std::string cameraIntrPath = "/root/data/cameraIntr.txt";
     std::cout << "default fx fy cx cy " << fx << " " << fy << " " << cx << " " << cy << std::endl;
     std::cout << "put camera file inside docker by this path: " << cameraIntrPath << std::endl;
-    std::ifstream cameraIntr(cameraIntrPath);
-    if (!cameraIntr.is_open()) {
-        std::cerr << "CAMERA FILE NOT OPEN, USING DEFAULT CAMERA INTRINSICS" << std::endl;
-
-    }
-    cameraIntr >> fx;
-    cameraIntr >> fy;
-    cameraIntr >> cx;
-    cameraIntr >> cy;
+//    std::ifstream cameraIntr(cameraIntrPath);
+//    if (!cameraIntr.is_open()) {
+//        std::cerr << "CAMERA FILE NOT OPEN, USING DEFAULT CAMERA INTRINSICS" << std::endl;
+//
+//    }
+//    cameraIntr >> fx;
+//    cameraIntr >> fy;
+//    cameraIntr >> cx;
+//    cameraIntr >> cy;
 
     std::cout << "INIT with fx, fy, cx, cy: " << fx << " " << fy << " " << cx << " " << cy << std::endl;
 //  dvo::core::IntrinsicMatrix intrinsics = dvo::core::IntrinsicMatrix::create(517.3, 516.5, 318.6, 255.3);
